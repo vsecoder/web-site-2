@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons"
 import { MainChart } from "@/components/main-chart"
 import Image from "next/image"
-
+import Link from "next/link"
 
 export default function IndexPage() {
   return (
@@ -17,6 +17,7 @@ export default function IndexPage() {
           <p className="text-center text-lg md:text-xl">3.000+ пользователей</p>
         </div>
       </section>
+
       <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:py-5">
         <MainChart />
         <div className="grid h-full items-center gap-3 md:grid-cols-2">
@@ -46,6 +47,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+
       <section className="container grid w-full items-center px-3 pb-4">
         <h2 className="pb-6 pt-8 text-2xl font-medium leading-tight md:text-3xl">
           Отзывы:
@@ -54,13 +56,6 @@ export default function IndexPage() {
           <div className="flex w-fit gap-3">
             <div className="flex w-80 flex-col items-center rounded-lg border bg-card p-5 text-card-foreground shadow-sm md:w-[25%]">
               <div className="mb-3 flex items-center gap-3">
-                <Image 
-                  width={32} 
-                  height={32} 
-                  src="https://cdn4.cdn-telegram.org/file/YFR3jrvyUMTP5sdL7B60m6Z-tNEJR-dS6wAcxDa00zAWs935rngUvQNac_sQp6EltoMj8Vp1huq4ya4Lwpy3flRytGeCg6TFIncJzyKTq7c6uB_6dR2ovuMmjQ4FZFC6LQqFDgZ1IVC68Z2jO8oL4KYYEAUScuctdjaeEUs8KA5VaSLPTPt-u2z_C82aljrGK1Ec43bD1sojp2QGxxebgFYZbBwEPCBMYhMfdp_gEgdhfblz2K1qtnsY24YivppvDN4aLNO8QMgZQOU9IotTtKxoT0Uo3oxzyTqoZFYareWHE9ar2U1Ugk6hJpV31eB9wBvH2f_ZuTk4OBLrwE8fkA.jpg" 
-                  alt="User avatar" 
-                  className="rounded-full"
-                />
                 <h3 className="text-lg font-semibold">QWZX</h3>
               </div>
               <p className="text-sm">
@@ -71,13 +66,6 @@ export default function IndexPage() {
             </div>
             <div className="flex w-80 flex-col items-center rounded-lg border bg-card p-5 text-card-foreground shadow-sm md:w-[25%]">
               <div className="mb-3 flex items-center gap-3">
-                <Image 
-                  width={32} 
-                  height={32} 
-                  src="https://cdn4.cdn-telegram.org/file/eYKo_hSeAKZDD-ftNnZCqg6MhY-8JtSUi7VI3eZFP1TjH6jbEH2IlKenK5v-1XyD_XP4ubWk_Xwubg5hJktkYlsaB7qIbaerVlqLbH5EHmPmQUy_yUdxvAobAkcYTkjFOcitHlANkIQUxDtWBFsEGTACw7FvhPD8A6iXsIS0XL56rK55OHC_8HSUSlUNHaBwUAewi8lhCo7LDp3Fj0xa0TtjNPNNqRo_LIObBWkZIScCiLynqjpsK7dcxvbRfi47_1D9C3X-ukGBWIiUeaOUmppSSkfJ2bZ57-36-CZ56ocnlsmpKSxIzRc2FNJp8Q0kAQIBiJveJzxxAefO7PkANg.jpg" 
-                  alt="User avatar" 
-                  className="rounded-full"
-                />
                 <h3 className="text-lg font-semibold">Anonim</h3>
               </div>
               <p className="text-sm">
@@ -86,13 +74,6 @@ export default function IndexPage() {
             </div>
             <div className="flex w-80 flex-col items-center rounded-lg border bg-card p-5 text-card-foreground shadow-sm md:w-[25%]">
               <div className="mb-3 flex items-center gap-3">
-                <Image 
-                  width={32} 
-                  height={32} 
-                  src="https://cdn4.cdn-telegram.org/file/WXoKrUJi_-DculNhsXZDCus94UNqyxZputlvYHkMq24IXO9350LMQEQ9_T6AA45RstClFrWmHjTyIsc9SRy5JKbKEWsUkUEXk54H3ACyWFp6U3nm87Ag2dOxzy4rede4eo8V7wZltQIa2qUiAWENCWFmyMWVVnfBg_Nxfx_zs6ZKWs22p-h3yG7BwLgSFnMWbi3O6mFjW4yo-tCeB8WqhL8Le8RfdKbXzL2PNfUMlChU84RNYhoHPe_1aGVlZ6iK7mmIR6VLGN4vp8SpUYJPmW3Eyv0dNj4SxRHsPhuDnflXQmWo7AUoSynCUzyIIbkeq3OHpSzqRr1lphLIxztNbA.jpg" 
-                  alt="User avatar" 
-                  className="rounded-full"
-                />
                 <h3 className="text-lg font-semibold">SLEEPZ</h3>
               </div>
               <p className="text-sm">
@@ -101,13 +82,6 @@ export default function IndexPage() {
             </div>
             <div className="flex w-80 flex-col items-center rounded-lg border bg-card p-5 text-card-foreground shadow-sm md:w-[25%]">
               <div className="mb-3 flex items-center gap-3">
-                <Image 
-                  width={32} 
-                  height={32} 
-                  src="https://cdn4.cdn-telegram.org/file/iM1eA_7NEYUXDTg4_NcayNhvXsX7q98UZ4sHnjja5579SKD4tqh74oZaYLDDHNIUE7vErtQ6ExKFmOLjgVHmOsq_rOybo6vzTOq-tQ2C6JwTPsLglu51pqk9xenZii3tnnrEBZw-SfR0hNMn6hNzM2uCV1M_nXLEvcF40yjGqJBLPfAoBs2JPn6-nwtKTDTWXb9uJGSikgJD75b24fyXSE0tomNtYSwmYJgtd1yB_91ub67DihB1mNfwqFG6bQiUoUfEGMNGSSQYuNm0pLtlruWJzTRgFiLGqD7UVWCjc-o9fFN6Vp48FaZ0701w_kE2xEzxRP0XEK4yFnhWwo9xUg.jpg" 
-                  alt="User avatar" 
-                  className="rounded-full"
-                />
                 <h3 className="text-lg font-semibold">Safaruia//RTFH</h3>
               </div>
               <p className="text-sm">
@@ -117,7 +91,52 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
-      {/* <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">footer</section> */}
+
+      <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">
+        <h2 className="text-2xl font-medium leading-tight md:text-3xl">
+          Контакты
+        </h2>
+        <div className="grid gap-3">
+          <p><strong>Почта:</strong> <Link href="mailto:support@hikka.host">support@hikka.host</Link></p>
+          <p><strong>Телефон:</strong> <Link href="tel:+79102665599">+7 (910) 266-55-99</Link></p>
+        </div>
+      </section>
+
+      <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">
+        <h2 className="text-2xl font-medium leading-tight md:text-3xl">
+          Условия возврата и отмены платежа
+        </h2>
+        <div className="grid gap-3">
+          <p>Возврат средств возможен в течение 14 дней с момента покупки при условии, что услуга не была использована. Для отмены платежа свяжитесь с нашей поддержкой.</p>
+        </div>
+      </section>
+
+      <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">
+        <h2 className="text-2xl font-medium leading-tight md:text-3xl">
+          Лицензия и согласие правообладателя
+        </h2>
+        <div className="grid gap-3">
+          <p>Мы обладаем всеми необходимыми лицензиями на продажу интеллектуальной собственности. Согласие правообладателя на реализацию товара с его товарным знаком подтверждено.</p>
+        </div>
+      </section>
+
+      <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">
+        <h2 className="text-2xl font-medium leading-tight md:text-3xl">
+          Политика обработки персональных данных
+        </h2>
+        <div className="grid gap-3">
+          <p>Мы соблюдаем все требования законодательства в области обработки персональных данных. Подробнее можно ознакомиться в нашей <Link href="https://blog.hikkahost.tech/user_agreement" className="text-blue-300">Политике конфиденциальности</Link>.</p>
+        </div>
+      </section>
+
+      <section className="container grid items-center gap-3 px-3 pb-3 pt-4 md:grid-cols-2 md:pt-16">
+        <h2 className="text-2xl font-medium leading-tight md:text-3xl">
+          Договор оферты
+        </h2>
+        <div className="grid gap-3">
+          <p>Ознакомиться с договором оферты можно по <Link href="https://blog.hikkahost.tech/offer-agreement" className="text-blue-300">ссылке</Link>.</p>
+        </div>
+      </section>
     </>
   )
 }
